@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>SuperPizza</title>
+
+	<nav>
+		<ul>
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</head>
+<body>
+	
+	
+
+	
+	<br>
+	<br>
+	<br>
+	<br>
+		<!-- carousselle -->
+	<div class="slideshow" >
+         <ul>
+            <li><img src="images/piz2.jpg" alt="" width="1000" height="450" /></li>
+            <li><img src="images/piz3.jpg" alt="" width="1000" height="450" /></li>
+            <li><img src="images/piz4.jpg" alt="" width="1000" height="450" /></li>   
+         </ul>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+   $(function(){
+      setInterval(function(){
+         $(".slideshow ul").animate({marginLeft:-350},800,function(){
+            $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+         })
+      }, 3500);
+   });
+</script>
+
+</body>
+</html>
