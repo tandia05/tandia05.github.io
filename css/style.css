@@ -1,292 +1,304 @@
 
+
 * {margin: 0;padding: 0;}
 body { /*margin: 0; padding: 0; margin-top: 0;*/}
-h1 , h2 , h3 , h4 {font-weight: bold; font-family: 'roboto-bold';}
-h5 , h6 {font-weight: normal; font-family: 'robot-regular'}
+h1 , h2 , h3 , h4 {font-family: 'roboto-bold'; }
+h5 , h6 {font-family: 'robot-regular';}
 
-
-
-.logo {margin-left: 200px; width: 150px; position: fixed; margin-top: 10px;}
-
+.logo {margin-left: 100px; width: 150px; margin-top: 10px; float: left;}
 .agency {width: 90%; margin: auto;  margin-top: 25px;}
+.menup {display: flex; width: 100%; height: 60px; top: 0; margin-top: 15px;
+	     background-color: #fff; margin: 0 auto;z-index: 10;position: fixed;}
+.menup ul { margin-right: 150px; margin-top: 20px; position: fixed; z-index: 10; right: 0;}
+.menup ul li {list-style: none; display: inline-block; line-height: 30px; border: 0px solid #000;}
+.menup ul li a {display: block; text-decoration: none; font-size: 14px; padding: 0 10px;
+	               font-family: arial; color: #1e1e1e; border: 2px solid white; }
+ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-color: blue;	}
+#accueil { display: flex; overflow: hidden;  margin: 0 auto;
+          position: relative; text-align: center; font-size:13px; margin-top: 120px;}
+#accueil img { height: 100%; }
+#l1 {width: 100%; position: absolute; top: 100px; right:290px; font-weight: bold;
+ 	    font-family: "Arial, Helvetica, sans-serif"; font-size: 2em; color: #6699FF; margin: auto;}
+#l2 {width: 100%; position: absolute; top: 100px; right:70px; font-weight: bold;
+ 	    font-family: "Arial, Helvetica, sans-serif";	font-size: 2em; color: #FFFFFF;}
+#l3 { width: 100%; position: absolute; top: 125px; right:280px; font-weight: bold;
+ 	    font-family: "Arial, Helvetica, sans-serif";	font-size: 2em; color: #FFFFFF; margin: auto;}
+#l4 {width: 100%; position: absolute;	top: 165px; right:200px; 
+ 	    font-family: "Arial, Helvetica, sans-serif";	font-size: 1em; color: #FFFFFF; margin: auto;}
+#l5 {width: 70px; height: 30px; border: 0px; position: absolute; top: 190px; right:870px; background-color: #6699FF;
+    	font-family: "Arial, Helvetica, sans-serif"; font-size: 1em; color: #FFFFFF; margin: auto; }
 
-.menup {
-	display: flex;
-	width: 100%;
-	height: 60px; top: 0; 
-	margin-top: 15px;
-	background-color: #fff; margin: 0 auto;z-index: 10;position: fixed;
-	/*margin-top: 30px;*/	
-}
-@media screen and (max-width: 1000px) {
-	.logo {margin-top: 30px; display: block; float: none;}
-	.menup ul {margin-top: 10px;display: block; float: none;}
-}
-.menup ul {
-	/*margin-left: 70px;*/
-	margin-right: 150px; margin-top: 20px;
-	position: fixed; z-index: 10;
-	/*float: right;*/
-	right: 0;
-}
 
 
-.menup ul li {
-	list-style: none;
-	display: inline-block;
-	line-height: 30px;
-	border: 0px solid #000;
+/******** iPad Pro *******/
+@media screen and (max-width: 1024px) {
+.menup ul {margin-top: 10px;display: block; float: none;}
+.logo {margin-left: 100px; width: 150px; margin-top: 6px;}
+.agency {width: 90%; margin: auto;  margin-top: 25px;}
+.menup ul li a {font-size: 24px;  }
+#l4 {width: 100%; top: 165px; right:140px; font-size: large;  margin: auto;}
+#l5 {width: 80px; height: 40px; border: 0px; right:750px; font-size: 15px; }
+} 
+
+    /******iPad******/
+@media screen and (max-width: 768px) {
+.logo {margin-left: 50px; width: 150px; margin-top: 6px;}
+.agency {width: 768px;}
+#accueil { margin: 0 auto; text-align: center; font-size:13px; margin-top: 120px;}
+#accueil img { width: 760px; margin: 0 auto}
+#l1 {width: 100%; top: 30px; right:250px;  font-size: 2em; }
+#l2 {width: 100%; top: 30px; right:30px;  font-size: 2em; }
+#l3 { width: 100%; top: 60px; right:240px;   font-size: 2em; }
+#l4 {width: 100%; top: 100px; right:100px; font-size: large;  margin: auto;}
+#l5 {width: 80px; height: 40px; right:680px; font-size: 15px; margin-top: -40px; }
+
 }
 
-.menup ul li a {
-	display: block;
-	text-decoration: none;
-	font-size: 14px;
-	padding: 0 10px;
-	font-family: arial;
-	color: #1e1e1e; border: 2px solid #e6f2ff;
-	}
+      /*********IPhone X*******/
+  @media screen and (max-width: 375px) {
 
-ul li a:hover {
-	background-color: #e6f2ff;
-	
-	
-}
+.menup {display: flex; width: 100%; height: 130px; top: 0; margin-top: 0;
+       z-index: 10;position: fixed;}
 
-#accueil {
-   display: flex;
-  /* width: 1000px; height: 450px;*/
-   overflow: hidden;
-   border: 3px solid #F2F2F2;
-   margin: 0 auto;
- /*  margin-top: 25px;*/
-   position: relative;
-   text-align: center;
-/* vertical-align: top;*/
- 	font-size:13px; margin-top: 120px;
-}
-#accueil img { /*margin-top: 180px;*/ height: 100%; }
-#l1 {
-	width: 100%; position: absolute;
- 	top: 100px; right:290px; font-weight: bold;
- 	font-family: "Arial, Helvetica, sans-serif";
- 	font-size: 2em; color: #6699FF; margin: auto;
-}
-#l2 {
-	width: 100%; position: absolute;
- 	top: 100px; right:70px; font-weight: bold;
- 	font-family: "Arial, Helvetica, sans-serif";
- 	font-size: 2em; color: #FFFFFF;
-}
-#l3 {
-	width: 100%; position: absolute;
- 	top: 125px; right:280px; font-weight: bold;
- 	font-family: "Arial, Helvetica, sans-serif";
- 	font-size: 2em; color: #FFFFFF; margin: auto;
-}
-#l4 {
-	width: 100%; position: absolute;
- 	top: 165px; right:200px; 
- 	font-family: "Arial, Helvetica, sans-serif";
- 	font-size: 1em; color: #FFFFFF; margin: auto;
-}
-#l5 {
-	width: 70px; height: 30px; border: 0px; position: absolute;
- 	top: 190px; right:870px; background-color: #6699FF;
- 	font-family: "Arial, Helvetica, sans-serif";
- 	font-size: 1em; color: #FFFFFF; margin: auto; opacity: 1;
-}
+  .menup ul {margin-top: 10px;display: block; float: none; height: 150px}
+.logo {margin-left: 130px; width: 230px; margin-top: 30px; height: 70px;}
+.agency {width: 90%; margin: auto;  margin-top: 25px; height: 6200px;}
+#l1 {width: 100%; top: 30px; right:250px;  font-size: 2.1em; }
+#l2 {width: 100%; top: 30px; right:30px;  font-size: 2.1em; }
+#l3 { width: 100%; top: 60px; right:240px;   font-size: 2.1em; }
+.menup ul li a {font-size: 44px;  }
+#l4 {width: 100%; top: 105px; right:20px; font-size: 25px;  }
+#l5 {width: 80px; height: 40px; border: 0px; right:680px; font-size: 15px; }
+
+  }
+
+
+   /*********1600px max*******/
+/*@media screen and (max-width: 1600px) {
+.menup ul {margin-top: 10px;display: block; float: none;}
+.logo {margin-left: 100px; width: 150px; margin-top: 6px;}
+.agency {width: 90%; margin: auto;  margin-top: 25px;}
+.menup ul li a {font-size: 24px;  }
+
+#l1 {width: 100%; top: 100px; right:345px;  font-size: 2.5em; }
+#l2 {width: 100%; top: 100px; right:70px;  font-size: 2.5em; }
+#l3 { width: 100%; top: 135px; right:340px;   font-size: 2.5em; }
+#l4 {width: 100%; top: 185px; right:220px; font-size: large;  margin: auto;}
+#l5 {width: 80px; height: 40px; right:830px; font-size: 15px; margin-top: 50px; }
+}*/
 
 /******************/
 /*SERVICES*/
 /******************/
-.tiserv {text-align: center; margin-top: 250px}
+.tiserv {text-align: center; margin-top: 250px; }
 .teserv > h5 {text-align: center;}
+.point {background:rgb(92, 173, 211); border-radius:50%; width:18px; height:18px;
+             border:4px solid #FFFFFF; margin: auto; margin-top: -4px;} 
+.barre {width:150px; border:0.5px solid #b3cccc; margin: auto;position: relative; margin-top: -8px; }
+.service {display: flex; width: 80%; /*border: 3px solid #F2F2F2;*/ margin: auto; margin-top: 25px;}
+.service2 h4 {margin-top: 15px;}
+.service0 {width: 100%; margin: auto;}
+.service1 {width:50%; margin: auto;}
+.service2 { width: 50%; margin: auto; }
+.icone {display: flex; flex-direction: row;}
+.gauche {float: left; vertical-align: middle;}
+.droite {float: left; margin-left: 5px; vertical-align: middle;}
+.fa {color: rgb(92, 173, 211); font-size: 25px; position: absolute;left: 6px;}
+ 
+.cercle-bleu { border-radius:50%; float: left; width:35px; height:35px; border:1.2px solid rgb(102, 153, 153);
+              display: flex; position: relative; flex-direction: row; justify-content: flex-end;
+              align-items: center;  }
+ 
+.petit-rond{background:rgb(92, 173, 211); border-radius:50%; width:14px; height:14px;
+             border:4px solid #FFFFFF; position: absolute; float: right; padding-left: 6px;} 
 
-.service {
-	display: flex;
-  /* width: 1000px;*/
-   /*height: 400px*/; width: 80%;
-   border: 3px solid #F2F2F2;
-   margin: auto;
-   margin-top: 25px;
-   /*overflow: hidden;
-   border: 0px solid #F2F2F2;
-   margin: 0 auto;
-   margin-top: 500;*/
+/*****Ipad Pro******/
+@media screen and (max-width: 1024px) {  
+.tiserv {font-size: 50px; }
+.teserv > h5 {font-size: 15px; text-align: center;} 
+.service { width: 900px; height: 950px;
+           margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
+.service1 {width:500px; margin: auto;}
+.service2 { width: 800px; margin: auto; display: flex; }
+.droite>h3 {width: 180px; height: 40px;  font-size: 30px;margin: 0;}
+.droite div>h5 {width: 700px; height: 80px; font-size: 15px;}
+.icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
+.icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
+}
+   /********iPad*******/
+@media screen and (max-width: 768px) {
+
+.agency {width: 900px;}
+.tiserv {font-size: 50px; }
+.teserv > h5 {font-size: 30px;} 
+.service { width: 900px; height: 950px;
+           margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
+.service1 {width:500px; margin: auto;}
+.service2 { width: 800px; margin: auto; display: flex; }
+.droite>h3 {width: 180px; height: 40px;  font-size: 40px;margin: 0;}
+.droite div>h5 {width: 700px; height: 80px; font-size: 25px;}
+.icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
+.icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
 }
 
-.service0 {width: 100%; margin: auto;}
-.service1 {/*float: left;*/ width: 60%; margin: auto;}
-.service2 {
-	/*float: left;*/ width: 40%; margin: auto;
-	/*margin-left: 90px; margin-top: 150px;
-	width: 500px; height: 450px;*/ }
+
+
+    /******1600px max******/
+/*@media screen and (max-width: 768px) {
+  .tiserv {font-size: 50px; }
+.teserv > h5 {font-size: 30px;} 
+.service { width: 900px; height: 950px;
+           margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
+.service1 {width:500px; margin: auto;}
+.service2 { width: 800px; margin: auto; display: flex; }
+.droite>h3 {width: 180px; height: 40px;  font-size: 40px;margin: 0;}
+.droite div>h5 {width: 700px; height: 80px; font-size: 25px;}
+.icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
+.icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
+}*/
+
+
 /******************/
 /*PROJETS*/
 /******************/
 
-.tiproj {text-align: center; }
+.tiproj {text-align: center; margin-top: 15px; }
 .texproj > h5 {text-align: center;}
 
-#projet {
-   width: 80%;
-  /* height: 600px;*/
-   background-color: #F2F4F4;
-   overflow: hidden;
-   border: 3px solid #F2F2F2;
-   margin: 0 auto;
-   margin-top: 150px;
-}
-#navsmenu {
-	display: flex;
-	width:50%;
-	height: 20px;
-	background-color: #F2F4F4;
-	margin-top: 30px;
-	margin: 0 auto;	
-}
-.ulsmenu {
-	display: flex; 
-	margin-left: 70px;
-	margin-right: 150px;
-	float: center;/*width: 100%;*/
-	height: 20px; 
-	
-}
-.ulsmenu  li {
-	display: flex;
-	list-style: none;
-	display: inline-block;
-	line-height: 20px; border: 2px;
-	border: 0px solid #000; background-color: #CCCCCC;
-	float: center; margin: 0 auto;
-}
+#projet { width: 80%;   background-color: #F2F4F4; overflow: hidden;  border: 3px solid #F2F2F2;  margin: 0 auto;
+         margin-top: 150px;}
+.navsmenu  {display: flex; justify-content: center; }
+.navsmenu a  { text-decoration: none; color: #000000; background-color: rgb(229,229,229);
+              padding: 13px; position: relative; }
+.navsmenu a:hover { color: white;  background-color: rgb(92,173,211);  border-bottom: 3px solid #468cad; }
+.navsmenu a:hover .triangle{ border-color: rgb(92,173,211) transparent transparent transparent; }
+.navsmenu .ulsmenu { list-style-type: none;  display: flex; margin: 20px;  padding: 40px; }
+.navsmenu li { border-radius: 5px;  border-bottom: 10px solid transparent;  }
+.triangle  { border-style: solid; border-width: 8px 8px 0 8px;
+              border-color: #007bff transparent transparent transparent;
+               position: absolute; top: 42px; right: 40px; }
+#projet0 {display: flex;  height: 350px; margin: auto;}
 
-.ulsmenu li  a {
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	font-size: 10px;
-	padding: 0 10px;
-	font-family: arial;
-	color: #1e1e1e; 
-	}
-
-.ulsmenu li a:hover {
-	background-color: #6699FF;
-	color: white;
-}
-
-
-
-#projet0 {display: flex; /*width: 100%;*/ height: 350px; margin: auto;}
-
-*
-{
-  box-sizing: border-box;
-}
- 
-/*body
-{
-  margin: 0;
-}*/
- 
-.contenu 
-{
-  background-color: #F2F4F4;
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
- /* align-items: center;*/
-  flex-wrap: wrap;
-   justify-content: space-between;
-   justify-content: space-around;
-   flex-direction: row;
-
-
-}
-.imgh {width: 25%; height: 150px; display: flex; padding:5px; position: relative; margin: auto;}
-img {width: 100%; height: 100% padding:5px; position: relative; margin: auto; }
+* {  box-sizing: border-box;}
+.contenu { background-color: #F2F4F4;  position: relative; margin: 0 auto; display: flex;
+           justify-content: center; flex-wrap: wrap;  justify-content: space-between;
+           justify-content: space-around; flex-direction: row;}
+.imgh {width: 25%; height: 150px; display: block; padding:5px; position: relative; margin: auto; overflow: hidden;}
+img {width: 100%; height: 100%; padding:5px; position: relative; margin: auto; }
 /*.contenu .imgh + img {width: 25%; height: 25px; padding:5px; position: relative; margin: auto; }*/
 .contenu .hov {opacity: 0; position: absolute; /*bottom: 0;*/}
-.contenu .imgh img:hover + .hov {
-  opacity: 1;
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 97%; height: 50%;
-  padding: 20px;
-	 }
+.contenu .imgh img:hover + .hov {opacity: 1; position: absolute; bottom: 0;
+                                  background: rgb(0, 0, 0); /* Fallback color */
+                                  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+                                  color: #f1f1f1; width: 97%; height: 50%; padding: 20px; }
+/*******ipad Pro******/
+@media screen and (max-width: 1024px) {
+  .tiproj {font-size: 30px; }
+.texproj > h5 {font-size: 15px;}
 
+#projet { width: 800px; height: 900px; overflow: hidden;  margin: 0 auto;}
+
+.navsmenu a  {  font-size: 20px;}
+#projet0 {display: flex; flex-wrap: wrap;  height: 350px; margin: auto;}
+.contenu { height: 550px;}
+.imgh {width: 250px; height: 150px;  padding:5px; position: relative; margin: auto; overflow: hidden;}
+img {width: 100%; height: 100%; padding:5px; position: relative; margin: auto; }
+ 
+}
+/*******ipad Pro******/
+@media screen and (max-width: 768px) {
+.tiproj {font-size: 30px; }
+.texproj > h5 {font-size: 25px;}
+#projet { width: 900px; height: 900px; overflow: hidden;  margin: 0 auto;}
+.navsmenu .ulsmenu { list-style-type: none;  display: flex;  }
+.navsmenu a  {  font-size: 20px;}
+#projet0 {display: flex; flex-wrap: wrap;  height: 350px; margin: auto;}
+.contenu { height: 550px;}
+.imgh {width: 250px; height: 150px;  padding:5px; position: relative; margin: auto; overflow: hidden;}
+img {width: 100%; height: 100%; padding:5px; position: relative; margin: auto; }
+}
+
+      /***********iPhone X *******/
+@media screen and (max-width: 375px) { 
+body {width: 900px;}
+.tiproj {font-size: 30px; }
+.texproj > h5 {font-size: 25px;}
+#projet { width: 900px; height: 3200px; overflow: hidden;  margin: 0 auto;}
+.navsmenu .ulsmenu { list-style-type: none;  display: flex;  }
+.navsmenu a  {  font-size: 30px;}
+#projet0 {display: flex; flex-wrap: wrap;  height: 2750px; margin: auto;}
+.contenu { height: 2400px; width: 800px;}
+.imgh {width: 450px; height: 350px;  padding:5px; position: relative; margin: auto; overflow: hidden;}
+img {width: 100%; height: 100%; padding:5px; position: relative; margin: auto; }
+.imgh .hov>h4 {font-size: 35px;}
+.imgh .hov>h6 {font-size: 20px;}
+
+}
 
 /****************************
 CONTACTS
 **************************/
 
-#contact {
-  display: flex;
-   width: 80%; height: 450px;
-   overflow: hidden;
-   border: 3px solid #F2F2F2;
-   margin: 0 auto;
-   margin-top: 150px;
-   position: relative;
-   text-align: center;
-/* vertical-align: top;*/
- 	font-size:13px;
- }
+#contact { display: flex; width: 80%; overflow: hidden; border: 3px solid #F2F2F2;
+   margin: 0 auto; margin-top: 150px;  position: relative; text-align: center;	font-size:13px; }
 
-.calque {
-   width: 1000px; height: 550px;
-   overflow: hidden;
-   border: 3px solid #F2F2F2;
-   margin: 0 ; position: relative;
-   /*position: relative;*//*z-index: 1;*/
-   background: rgb(0, 0, 0);
-   background: rgba(0,0,255,0.3); mix-blend-mode: darken;
- }
+.calque { width: 100%; height: 550px; overflow: hidden;  border: 3px solid #F2F2F2;
+   margin: 0 ; position: relative; background: rgb(0, 0, 0);
+   background: rgba(0,0,255,0.3); mix-blend-mode: darken; }
 
- .maps {
-   width: 1000px; height: 550px;
-   overflow: hidden;
-   border: 3px solid #F2F2F2;
-   margin: 0 ;
-   /*margin-top: 500;*/
-  /* position: relative;*/
-   text-align: center;
-/* vertical-align: top;*/
- 	font-size:13px; 
- 	/* background: rgb(0, 0, 0);
-   background: rgba(0,0,255,0.3);*/
- 	mix-blend-mode: darken;
- 	/*width="600" height="450" frameborder="0" style="border:0" allowfullscreen*/
- }
+ .maps {  width: 100%; height: 550px;  overflow: hidden;  border: 3px solid #F2F2F2;  margin: 0 ;
+   text-align: center;	font-size:13px; 	mix-blend-mode: darken;}
 
- form {
-	width: 30%; position: absolute; border: 3px solid #F2F2F2;
- 	 right:90px; font-weight: bold;  text-align: left;
- 	font-family: "Arial, Helvetica, sans-serif";
- 	/*font-size: 2em;*/  margin: 0 auto; /*float: center;*/z-index: 2;/*bottom: 0.1;*/ margin-top: 10px;
- 	 background: rgb(230, 242, 255); /* Fallback color */
-  background: rgba(230, 242, 255,0.5); /* Black background with 0.5 opacity */
-
-}
+ form {	width: 30%; position: absolute; border: 3px solid #F2F2F2; right:90px; font-weight: bold;  text-align: left;
+ 	font-family: "Arial, Helvetica, sans-serif"; margin: 0 auto; z-index: 2; margin-top: 10px;
+ 	 background: rgb(230, 242, 255);  background: rgba(230, 242, 255,0.5); }
 .texcont {margin-left: 8px;}
 
 input { width: 260px; height: 10px; padding: 1em; margin: 0.5em; overflow: hidden; }
 textarea {width: 260px; padding: 1em; margin: 0.5em; overflow: hidden;}
 button {padding: 0.5em; margin: 0 auto; background-color: #6699FF; color:  #ffffff;}
+
+      /**************    ***********/
 @media screen and (max-width: 1200px) {
-     input[type=text], textarea, button {
-        width: 100%;
-        margin-top: 0; margin-left: 0;
-    }
+     input[type=text], textarea, button { width: 100%; margin-top: 0; margin-left: 0;  }
 }
 
+/*********iPad Pro****************/
+@media screen and (max-width: 1024px) {
+  form {width: 250px; right:30px;   font-size: 25px;}
+
+input { width: 200px; height: 10px; padding: 15px; margin: 0.5em; overflow: hidden; }
+textarea {width: 200px; padding: 15px; margin: 0.5em; overflow: hidden;}
+button {padding: 0.5em; margin: 0 auto;font-size: 15px;}
+}
+
+/***********iPhone X ********/
+@media screen and (max-width: 375px) {
+
+
+#contact { display: flex; width: 80%; overflow: hidden; height: 550px;
+   margin: 0 auto; margin-top: 150px;  position: relative; text-align: center;  font-size:13px; }
+
+.calque { width: 100%; height: 550px; overflow: hidden;  border: 3px solid #F2F2F2;
+   margin: 0 ; position: relative; background: rgb(0, 0, 0);
+   background: rgba(0,0,255,0.3); mix-blend-mode: darken; }
+
+ .maps {  width: 100%; height: 550px;  overflow: hidden;  border: 3px solid #F2F2F2;  margin: 0 ;
+   text-align: center;  font-size:13px;   mix-blend-mode: darken;}
+
+ form { width: 40%; position: absolute; border: 3px solid #F2F2F2; right:90px; font-weight: bold;  text-align: left;
+  font-family: "Arial, Helvetica, sans-serif"; margin: 0 auto; z-index: 2; margin-top: 20px;
+   background: rgb(230, 242, 255);  background: rgba(230, 242, 255,0.5); }
+.texcont {margin-left: 8px;}
+
+input { width: 260px; height: 10px; padding: 1em; margin: 0.5em; overflow: hidden; }
+textarea {width: 260px; padding: 1em; margin: 0.5em; overflow: hidden;}
+button {padding: 0.5em; margin: 0 auto; background-color: #6699FF; color:  #ffffff;}
+
+
+
+
+}
 
 /**********FOOTER*****************/
 
