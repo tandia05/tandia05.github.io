@@ -33,8 +33,8 @@ ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-colo
 /******** iPad Pro *******/
 @media screen and (max-width: 1024px) {
 .menup ul {margin-top: 10px;display: block; float: none;}
-.logo {margin-left: 100px; width: 150px; margin-top: 6px;}
-.agency {width: 90%; margin: auto;  margin-top: 25px;}
+.logo {margin-left: 100px; width: 150px; margin-top: 1px;}
+.agency {width: 90%; margin: auto;  margin-top: 25px; height: 3000px;}
 .menup ul li a {font-size: 24px;  }
 #l4 {width: 100%; top: 165px; right:140px; font-size: large;  margin: auto;}
 #l5 {width: 80px; height: 40px; border: 0px; right:750px; font-size: 15px; }
@@ -62,7 +62,7 @@ ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-colo
 
   .menup ul {margin-top: 10px;display: block; float: none; height: 150px}
 .logo {margin-left: 130px; width: 230px; margin-top: 30px; height: 70px;}
-.agency {width: 90%; margin: auto;  margin-top: 25px; height: 6200px;}
+.agency {width: 90%; margin: auto;  margin-top: 25px; height: 6000px;}
 #l1 {width: 100%; top: 30px; right:250px;  font-size: 2.1em; }
 #l2 {width: 100%; top: 30px; right:30px;  font-size: 2.1em; }
 #l3 { width: 100%; top: 60px; right:240px;   font-size: 2.1em; }
@@ -90,7 +90,7 @@ ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-colo
 /******************/
 /*SERVICES*/
 /******************/
-.tiserv {text-align: center; margin-top: 250px; }
+.tiserv {text-align: center; margin-top: 80px; }
 .teserv > h5 {text-align: center;}
 .point {background:rgb(92, 173, 211); border-radius:50%; width:18px; height:18px;
              border:4px solid #FFFFFF; margin: auto; margin-top: -4px;} 
@@ -167,7 +167,7 @@ ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-colo
 .texproj > h5 {text-align: center;}
 
 #projet { width: 80%;   background-color: #F2F4F4; overflow: hidden;  border: 3px solid #F2F2F2;  margin: 0 auto;
-         margin-top: 150px;}
+         margin-top: 80px;}
 .navsmenu  {display: flex; justify-content: center; }
 .navsmenu a  { text-decoration: none; color: #000000; background-color: rgb(229,229,229);
               padding: 13px; position: relative; }
@@ -241,7 +241,7 @@ CONTACTS
 **************************/
 
 #contact { display: flex; width: 80%; overflow: hidden; border: 3px solid #F2F2F2;
-   margin: 0 auto; margin-top: 150px;  position: relative; text-align: center;	font-size:13px; }
+   margin: 0 auto; margin-top: 80px;  position: relative; text-align: center;	font-size:13px; }
 
 .calque { width: 100%; height: 550px; overflow: hidden;  border: 3px solid #F2F2F2;
    margin: 0 ; position: relative; background: rgb(0, 0, 0);
