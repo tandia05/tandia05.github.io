@@ -28,7 +28,7 @@ ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-colo
 
 
 
-/******** iPad Pro *******/
+/******** iPad Pro *********/
 @media screen and (max-width: 1024px) {
 .menup ul {margin-top: 10px;display: block; float: none;}
 .logo {margin-left: 100px; width: 150px; margin-top: 1px;}
