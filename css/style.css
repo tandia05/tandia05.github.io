@@ -198,8 +198,8 @@ h3.seo {margin-top: 15px;}
            margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
 .service1 {width:500px; margin: auto;}
 .service2 { width: 800px; margin: auto; display: flex; }
-.droite>h3 {width: 180px; height: 40px;  font-size: 40px;margin: 0; margin-top: 35px;}
-.droite div>p {width: 700px; height: 80px; font-size: 35px;}
+.droite>h3 {width: 180px; height: 40px;  font-size: 35px;margin: 0; margin-top: 35px;}
+.droite div>p {width: 700px; height: 80px; font-size: 30px;}
 .droite div>p {margin-top: 5px;}
 h3.seo {margin-top: 35px;}
 .icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
