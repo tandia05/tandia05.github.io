@@ -27,21 +27,22 @@ font-style: normal;
 
 
 * {margin: 0;padding: 0;}
-body { /*margin: 0; padding: 0; margin-top: 0;*/ max-width: 1680px; margin: auto;}
+body { /*margin: 0; padding: 0; margin-top: 0;*/ /*max-width: 1680px;*/ margin: auto;}
 h1 , h2 , h3 , h4 {font-family: 'roboto'; font-weight: bold; }
-h5 , h6 {font-family: 'robot'; font-weight: normal;}
+h5 , h6 ,p {font-family: 'robot'; font-weight: normal;}
 
-.logo {/*margin-left: 100px;*/ width: 150px; margin-top: 3%; height: 40%; /*margin: auto;*/ }
-.agency {width: 90%; margin: auto;  margin-top: 25px; }
+.logo {/*margin-left: 100px;*/ width: 10%; margin-top: 3%; height: 40%; /*margin: auto;*/ }
+.agency {width: 90%; margin: 0 auto;  margin-top: 25px;  max-width: 1200px; height: 2300px;}
 .menup {display: flex; width: 100%; height: 100px; top: 0; margin-top: 1%; justify-content: space-between;
         flex-wrap: wrap; align-items: center; justify-content: center;
-	     background-color: #fff; margin: auto;z-index: 10;position: fixed; max-width: 1580px;}
+	     background-color: #fff; margin: auto;z-index: 10;position: fixed; max-width: 1200px;}
 .menup ul { margin-right: 150px; margin-top: 20px; z-index: 10; /*right: 0;*/ }
 .menup ul li {list-style: none; display: inline-block; line-height: 30px; border: 0px solid #000;}
 .menup ul li a {display: block; text-decoration: none; font-size: 18px; padding: 0 10px;
 	               font-family: arial; color: #1e1e1e; border: 2px solid white; }
-ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-color: blue;	}
-#accueil { display: flex; overflow: hidden;  margin: 0 auto;
+ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-color: #5cadd3;	}
+ul li a:active  {background-color: white; border-top-style: 2px ; border-top-color: #5cadd3; }
+#accueil { display: flex; overflow: hidden;  margin: 0 auto; 
           position: relative; text-align: center; font-size:13px; margin-top: 120px;}
 #accueil img { height: 100%; position: relative; }
 
@@ -61,57 +62,58 @@ ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-colo
 
 #l4 {width: auto; margin-left: 15%;
  	    	font-size: 1em; color: #FFFFFF;}
-#l5 {width: 80px; height: 40px; border: 0px; margin-left: 15%; background-color: #6699FF; margin-top: 1%;
+#l5 {width: 7%; height: 30px; border: 0px; margin-left: 15%; background-color: #6699FF; margin-top: 1%;
     	font-family: "Arial, Helvetica, sans-serif"; font-size: 10px; color: #FFFFFF; cursor: pointer; }
 
 
 /******** iPad Pro *********/
 @media screen and (max-width: 1024px) {
 .menup ul {margin-top: 10px;display: block; float: none;}
-.logo { width: 150px; margin-top: 3.5%;}
-.agency {width: 90%; margin: auto;  margin-top: 25px; height: 4000px;}
+.logo { width: 20%; margin-top: 3.5%;}
+.agency {/*width: 90%;*/ margin: auto;  margin-top: 25px; height: 3000px;}
 .menup ul li a {font-size: 24px;  }
 #l4 { font-size: large;  }
-#l5 {width: 80px; height: 40px; border: 0px; top: 60%; left: 20%; font-size: 15px; }
-
-#accueil .round { border-radius: 50%; background-color: #666666; position: absolute; margin-top: 80px; }
+#l5 {width: 7%; height: 30px; border: 0px; top: 60%; left: 20%; font-size: 10px; }
+#accueil .previous { color: white; left: 0%;}
+#accueil .next { color: white;  right: 0.5%;}
+#accueil .round { border-radius: 50%; background-color: #666666; position: absolute; margin-top: 10%; }
 
 } 
 
     /******iPad******/
 @media screen and (max-width: 768px) {
-.logo {/*margin-left: 50px;*/ width: 150px; margin-top: 3.5%;}
-.agency {width: 768px;}
+.logo { width: 20%; margin-top: 5%;}
+.agency {width: 90%;}
 #accueil { margin: 0 auto; text-align: center; font-size:13px; margin-top: 120px;}
-#accueil img { width: 760px; margin: 0 auto}
+#accueil img { /*width: 760px;*/ margin: 0 auto}
 #l1 {   font-size: 2em; }
 
 #l3 {   font-size: 2em; }
 #l4 {width: 350px;  font-size: large;  margin-left: 140px;}
-#l5 {width: 80px; height: 40px;  font-size: 15px; margin-top: -20px; margin-left: 150px; }
-#accueil .previous { color: white; margin-left: 70px;}
-#accueil .next { color: white;  right: 70px;}
-#accueil .round { border-radius: 50%; background-color: #666666; position: absolute; margin-top: 70px; }
+#l5 {width: 10%; height: 30px;  font-size: 10px; margin-top: -20px; margin-left: 150px; }
+#accueil .previous { color: white; left: 0%;}
+#accueil .next { color: white;  right: 0.5%;}
+#accueil .round { border-radius: 50%; background-color: #666666; position: absolute; margin-top: 10%; }
 
 }
 
       /*********IPhone X*******/
   @media screen and (max-width: 375px) {
 
-.menup {display: flex; width: 100%; height: 150px; top: 0; margin-top: 0; align-items: center;
+.menup {display: flex; width: 100%; height: 90px; top: 0; margin-top: 0; align-items: center;
        z-index: 10;position: fixed; justify-content: center;}
 
-.menup ul {/*margin-top: 10px;*//*display: block;*/ height: 50px; /*margin-right: 70px;*/ margin: auto;}
-.logo {/*margin-left: 160px;*/ width: 230px; margin-top: 30px; height: 70px; margin: auto;}
+.menup ul {/*margin-top: 10px;*//*display: block;*/ height: 10px;  margin: auto;}
+.logo {/*margin-left: 160px;*/ width: 20%; margin-top: 30px; height: 30px; margin: auto;}
 .agency {width: 90%; margin: auto;  margin-top: 25px; height: 7000px;}
-.menup ul li a {font-size: 44px;  }
-#l1 { font-size: 2.1em; }
-#l3 {    font-size: 2.1em; }
-#l4 { font-size: 25px;  }
-#l5 {width: 140px; height: 50px; font-size: 20px; margin-left: 160px;  margin-top: 7px;}
-#accueil .previous { color: white; margin-left: 75px;}
-#accueil .next { color: white;  right: 75px;}
-#accueil .round {   margin-top: 90px; }
+.menup ul li a {font-size: 15px; line-height: 5px; }
+#l1 { font-size: 15px; }
+#l3 {    font-size: 15px; }
+#l4 { font-size: 11px; margin-left: 5%; }
+#l5 {width: 60px; height: 30px; font-size: 10px; margin-left: 12%;  margin-top: 2px;}
+#accueil .previous { color: white; margin-left: 0%;}
+#accueil .next { color: white;  right: 0%;}
+#accueil .round {   margin-top: 5%; font-size: 5px;}
 
   }
 
@@ -136,11 +138,11 @@ ul li a:hover  {background-color: white; border-top-style: 2px ; border-top-colo
 /*SERVICES*/
 /******************/
 .tiserv {text-align: center; margin-top: 80px; margin-bottom: 5px; }
-.teserv > h5 {text-align: center; margin-top: 10px; font-size: 15px;}
+.teserv > p {text-align: center; margin-top: 10px; font-size: 15px;}
 .point {background:rgb(92, 173, 211); border-radius:50%; width:18px; height:18px;
              border:4px solid #FFFFFF; margin: auto; margin-top: -4px;} 
 .barre {width:150px; border:0.5px solid #b3cccc; margin: auto;position: relative; margin-top: -9px; opacity: 0.1; }
-.service {display: flex; width: 80%; /*border: 3px solid #F2F2F2;*/ margin: auto; margin-top: 25px;}
+.service {display: flex; width: 80%;  margin: auto; margin-top: 25px;}
 .service2 h4 {margin-top: 15px;}
 .service0 {width: 100%; margin: auto;}
 .service1 {width:50%; margin: auto;}
@@ -161,13 +163,14 @@ h3.seo {margin-top: 15px;}
 /*****Ipad Pro******/
 @media screen and (max-width: 1024px) {  
 .tiserv {font-size: 30px; }
-.teserv > h5 {font-size: 20px; text-align: center;} 
-.service { width: 900px; height: 950px;
-           margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
-.service1 {width:500px; margin: auto;}
-.service2 { width: 800px; margin: auto; display: flex; }
-.droite>h3 {width: 180px; height: 40px;  font-size: 30px;margin: 0;}
-.droite div>p {width: 700px; height: 80px; font-size: 25px;}
+.teserv > p {font-size: 20px; text-align: center;} 
+.service { /*width: 900px;*/ height: 950px;
+           margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap; align-items: flex-start;}
+.service1 {width:70%; margin: auto;}
+.service2 { width: 70%; margin: auto; display: flex; }
+.droite>h3 {width: 50%; height: 40px;  font-size: 30px;margin: 0;}
+/*.droite { display: flex; flex-direction: column; }*/
+.droite div>p {width: 100%; height: 80px; font-size: 20px;}
 .icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
 .icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
 .icone .gauche .cercle-bleu .petit-rond {width: 25px; height: 25px; right: -8px;}
@@ -175,15 +178,15 @@ h3.seo {margin-top: 15px;}
    /********iPad*******/
 @media screen and (max-width: 768px) {
 
-.agency {width: 900px; height: 3700px;}
+.agency {/*width: 900px;*/ height: 3700px;}
 .tiserv {font-size: 50px; }
 .teserv > h5 {font-size: 30px;} 
-.service { width: 900px; height: 950px;
+.service { /*width: 900px;*/ height: 950px;
            margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
-.service1 {width:500px; margin: auto;}
-.service2 { width: 800px; margin: auto; display: flex; }
-.droite>h3 {width: 180px; height: 40px;  font-size: 30px;margin: 0;}
-.droite div>h5 {width: 700px; height: 80px; font-size: 25px;}
+.service1 {width:70%; margin: auto;}
+.service2 { width: 70%; margin: auto; display: flex; }
+.droite>h3 {width: 50%; height: 40px;  font-size: 30px;margin: 0;}
+.droite div>p {width: 100%; height: 80px; font-size: 20px;}
 .droite div>p {margin-top: 5px;}
 .icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
 .icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
@@ -194,38 +197,26 @@ h3.seo {margin-top: 15px;}
 
 @media screen and (max-width: 375px) {
 
-.agency {width: 900px; height: 6500px;}
-.tiserv {font-size: 50px; }
-.teserv > h5 {font-size: 40px;} 
-.service { width: 900px; height: 1050px;
+.agency {width: 90%; height: 6500px;}
+.tiserv {font-size: 20px; }
+.teserv > p {font-size: 19px;} 
+.service {/* width: 900px;*/ height: 600px;
            margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
-.service1 {width:500px; margin: auto;}
-.service2 { width: 800px; margin: auto; display: flex; }
-.droite>h3 {width: 180px; height: 40px;  font-size: 35px;margin: 0; margin-top: 35px;}
-.droite div>p {width: 700px; height: 80px; font-size: 30px;}
+.service1 {width:80%; margin: 0 auto; }
+.service2 { width: 80%; margin: 0 auto; display: flex; }
+.droite>h3 {width: 100%; height: 20px;  font-size: 15px;margin: 0; /*margin-top: 35px;*/}
+.droite div>p {width: 100%; height: 80px; font-size: 15px;}
 .droite div>p {margin-top: 5px;}
 h3.seo {margin-top: 35px;}
-.icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
-.icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
+.icone .gauche .cercle-bleu {font-size: 90px; width: 40px; height: 40px;}
+.icone .gauche .cercle-bleu .fa {font-size: 25px; margin-left: 1px;} 
+.icone .gauche .cercle-bleu .petit-rond {width: 15px; height: 15px; right: -8px;}
 
 }
 
 
 
 
-    /******1600px max******/
-/*@media screen and (max-width: 768px) {
-  .tiserv {font-size: 50px; }
-.teserv > h5 {font-size: 30px;} 
-.service { width: 900px; height: 950px;
-           margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
-.service1 {width:500px; margin: auto;}
-.service2 { width: 800px; margin: auto; display: flex; }
-.droite>h3 {width: 180px; height: 40px;  font-size: 40px;margin: 0;}
-.droite div>h5 {width: 700px; height: 80px; font-size: 25px;}
-.icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
-.icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
-}*/
 
 
 /******************/
@@ -242,11 +233,12 @@ h3.seo {margin-top: 35px;}
               padding: 13px; position: relative; }
 .navsmenu a:hover { color: white;  background-color: rgb(92,173,211);  border-bottom: 3px solid #468cad; }
 .navsmenu a:hover  .triangle{ border-color: rgb(92,173,211) transparent transparent transparent; opacity: 1;}
+.navsmenu a:active .triangle{ border-color: rgb(92,173,211) transparent transparent transparent; opacity: 1;}
 .navsmenu .ulsmenu { list-style-type: none;  display: flex; margin: 20px;  padding: 40px; }
 .navsmenu li { border-radius: 5px;  border-bottom: 10px solid transparent;  }
 .triangle  { border-style: solid; border-width: 8px 8px 0 8px;
               border-color: #007bff transparent transparent transparent;
-               position: absolute; top: 42px; right: 40px; opacity: 0;}
+               position: absolute; top: 42px; right: 45%; opacity: 0;}
 #projet0 {display: flex;  height: 350px; margin: auto;}
 
 * {  box-sizing: border-box;}
@@ -267,51 +259,64 @@ img {width: 100%; height: 100%;  position: relative; margin: auto; }
   .tiproj {font-size: 30px; }
 .texproj > h5 {font-size: 20px;}
 
-#projet { width: 800px; height: 900px; overflow: hidden;  margin: 0 auto;}
+#projet {  height: 900px; overflow: hidden;  margin: 0 auto;}
 
 .navsmenu a  {  font-size: 20px;}
-#projet0 {display: flex; flex-wrap: wrap;  height: 350px; margin: auto;}
+#projet0 {display: flex; flex-wrap: wrap;  height: 300px; margin: auto;}
 .contenu { height: 550px;}
-.imgh {width: 250px; height: 150px;  margin-left: 2px; position: relative; /*margin: auto;*/ overflow: hidden;}
-img {width: 100%; height: 100%; /*padding:5px; */position: relative; margin: auto; }
- 
+.imgh {width: 30%; height: 150px;  margin-left: 2px; position: relative;  overflow: hidden;}
+img {width: 100%; height: 100%; position: relative; margin: auto; }
+ .agency { height: 4000px;}
 }
-/*******ipad Pro******/
+/*******ipad ******/
 @media screen and (max-width: 768px) {
 .tiproj {font-size: 30px; }
 .texproj > h5 {font-size: 25px;}
-#projet { width: 900px; height: 900px; overflow: hidden;  margin: 0 auto;}
+#projet { width: 90%; height: 900px; overflow: hidden;  margin: 0 auto;}
 .navsmenu .ulsmenu { list-style-type: none;  display: flex;  }
 .navsmenu a  {  font-size: 20px;}
 #projet0 {display: flex; flex-wrap: wrap;  height: 350px; margin: auto;}
 .contenu { height: 550px;}
-.imgh {width: 250px; height: 150px; margin-left: 2px; position: relative;  overflow: hidden;}
+.imgh {width: 30%; height: 150px; margin-left: 2px; position: relative;  overflow: hidden;}
 img {width: 100%; height: 100%;  position: relative; margin: auto; }
 }
 
       /***********iPhone X *******/
 @media screen and (max-width: 375px) { 
-body {width: 900px;}
-.tiproj {font-size: 40px; }
-.texproj > h5 {font-size: 35px;}
-#projet { width: 900px; height: 3200px; overflow: hidden;  margin: 0 auto;}
-.navsmenu .ulsmenu { list-style-type: none;  display: flex;  }
+.tiproj {font-size: 20px; }
+.texproj > h5 {font-size: 19px;}
+#projet { width: 90%; height: 2700px; overflow: hidden;  margin: 0 auto;}
+.navsmenu .ulsmenu { list-style-type: none;  display: flex; width: 100%; padding: 10px; }
 .navsmenu li { font-size: 35px;   }
-.navsmenu a  {  font-size: 30px;}
+.navsmenu a  {  font-size: 10px; padding: 10px;}
 #projet0 {display: flex; flex-wrap: wrap;  height: 2750px; margin: auto;}
 .contenu { height: 2400px; width: 800px;}
-.imgh {width: 450px; height: 350px; position: relative; margin-top: 9px;  overflow: hidden;}
+.imgh {width: 90%; height: 10%; position: relative; margin-top: 9px;  overflow: hidden;}
 img {width: 100%; height: 100%;  position: relative; margin: auto; }
-.imgh .hov>h4 {font-size: 35px;}
-.imgh .hov>h6 {font-size: 20px;}
+.imgh .hov>h4 {font-size: 20px;}
+.imgh .hov>h6 {font-size: 15px;}
 
 }
+
+
+    /***********Galaxy S5 *******/
+@media screen and (max-width: 360px) { 
+
+#projet { width: 90%; height: 2700px; overflow: hidden;  margin: 0 auto;}
+.navsmenu .ulsmenu { list-style-type: none;  display: flex; width: 100%; padding: 10px; }
+.navsmenu li { font-size: 35px;   }
+.navsmenu a  {  font-size: 10px; padding: 5px;}
+
+
+}
+
+
 
 /****************************
 CONTACTS
 **************************/
 
-#contact { display: flex; width: 80%; overflow: hidden; 
+#contact { display: flex; width: 90%; overflow: hidden; 
    margin: 0 auto; margin-top: 80px;  position: relative; text-align: center;	font-size:13px; }
 
 .calque { width: 100%; height: 550px; overflow: hidden;  
@@ -326,8 +331,8 @@ CONTACTS
  	 background: rgb(255, 255, 255);  background: rgba(255, 255, 255,0.8); margin-top: 10px; }
 .texcont {margin-left: 8px; border: 2px;}
 
-input { width: 260px; height: 10px; padding: 1em; margin: 0.5em; overflow: hidden;float: center; }
-textarea {width: 260px; height: 120px; padding: 1em; margin: 0.5em; overflow: hidden;}
+input { width: 90%; height: 1%; padding: 1em; margin: 0.5em; overflow: hidden;float: center; }
+textarea {width: 90%; height: 1%; padding: 1em; margin: 0.5em; overflow: hidden;}
 button {padding: 0.5em; margin-left: 10px; margin-top: -2px; background-color: #6699FF; color:  #ffffff;}
 
       /**************    ***********/
@@ -371,21 +376,21 @@ button {padding: 0.5em; margin: 0 auto; background-color: #6699FF; color:  #ffff
 /**********FOOTER*****************/
 
 
-.marge {width: 100%; height: 130px; display: none;}
+.phonexform {/*width: 100%; height: 130px;*/ display: none;}
     @media screen and (max-width: 375px) {
-.agency { height: 7000px; }
-.marge {width: 80%; height: 750px; margin: 0 auto; position: relative; display: block;}
-.marge .phonexform {  width: 500px; height: 700px;  font-weight: bold;  text-align: left;
-  font-family: "Arial, Helvetica, sans-serif"; margin: 0 auto; border: 3px; margin-left: 50px; 
+.agency { height: 6300px; }
+.marge {width: 90%; /*height: 750px;*/ margin: 0; /*position: relative;*/ display: block;}
+/*.marge*/ .phonexform {  width: 80%; height: 600px;  font-weight: bold;  text-align: left; display: block;
+  font-family: "Arial, Helvetica, sans-serif"; margin: 0; border: 3px; margin-left: 50px; 
     background: rgb(223, 223, 233); margin-top: 60px; /*position: absolute;*/ }
-.phonexform .texcont {margin-left: 8px; font-size: 35px; margin-left: 50px;}
+.phonexform .texcont { font-size: 20px; margin-left: 10px;}
 
-.phonexform>table>tbody>tr>td>input { width: 380px; height: 50px; padding: 1em; margin: 0.5em; overflow: hidden;
-                         font-size: 25px; margin-left: 50px;}
-.phonexform>table>tbody>tr>td>textarea {width: 380px; height: 200px; padding: 1em; margin: 0.5em;
-                         overflow: hidden; font-size: 30px; margin-left: 50px;}
+.phonexform>table>tbody>tr>td>input { width: 85%; height: 50px; padding: 1.5em; margin: 0.5em; overflow: hidden;
+                         font-size: 15px; margin-left: 10px;}
+.phonexform>table>tbody>tr>td>textarea {width: 85%; height: 200px; padding: 1.5em; margin: 0.5em;
+                         overflow: hidden; font-size: 15px; margin-left: 10px;}
 .phonexform>table>tbody>tr>td>button {padding: 0.5em; margin-left: 10px; background-color: #6699FF;
-         color:  #ffffff; font-size: 25px; margin-left: 50px;}
+         color:  #ffffff; font-size: 15px; margin-left: 50px;}
 }
 
 .cestlafin {height: 150px;}
