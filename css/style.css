@@ -68,10 +68,10 @@ ul li a:active  {background-color: white; border-top-style: 2px ; border-top-col
 
 /******** iPad Pro *********/
 @media screen and (max-width: 1024px) {
-.menup ul {margin-top: 10px;display: block; float: none;}
+.menup ul {margin-top: 10px;/*display: block; float: none;*/}
 .logo { width: 20%; margin-top: 3.5%;}
 .agency {/*width: 90%;*/ margin: auto;  margin-top: 25px; height: 3000px;}
-.menup ul li a {font-size: 24px;  }
+.menup ul li a {font-size: 100%;  }
 #l4 { font-size: large;  }
 #l5 {width: 7%; height: 30px; border: 0px; top: 60%; left: 20%; font-size: 10px; }
 #accueil .previous { color: white; left: 0%;}
@@ -178,15 +178,15 @@ h3.seo {margin-top: 15px;}
    /********iPad*******/
 @media screen and (max-width: 768px) {
 
-.agency {/*width: 900px;*/ height: 3700px;}
+.agency { height: 3700px;}
 .tiserv {font-size: 50px; }
 .teserv > h5 {font-size: 30px;} 
-.service { /*width: 900px;*/ height: 950px;
+.service { height: 950px;
            margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
 .service1 {width:70%; margin: auto;}
 .service2 { width: 70%; margin: auto; display: flex; }
-.droite>h3 {width: 50%; height: 40px;  font-size: 30px;margin: 0;}
-.droite div>p {width: 100%; height: 80px; font-size: 20px;}
+.droite>h3 {width: 100%; height: 30%;  font-size: 25px;margin: 0; margin-top: 20%}
+.droite div>p {width: 100%; height: 60%; font-size: 15px;}
 .droite div>p {margin-top: 5px;}
 .icone .gauche .cercle-bleu {font-size: 90px; width: 80px; height: 80px;}
 .icone .gauche .cercle-bleu .fa {font-size: 35px; margin-left: 15px;} 
@@ -204,7 +204,7 @@ h3.seo {margin-top: 15px;}
            margin: auto; margin-top: 25px;flex-direction: column; flex-wrap: wrap;}
 .service1 {width:80%; margin: 0 auto; }
 .service2 { width: 80%; margin: 0 auto; display: flex; }
-.droite>h3 {width: 100%; height: 20px;  font-size: 15px;margin: 0; /*margin-top: 35px;*/}
+.droite>h3 {width: 100%; height: 20px;  font-size: 15px;margin: 0; margin-top: 15%;}
 .droite div>p {width: 100%; height: 80px; font-size: 15px;}
 .droite div>p {margin-top: 5px;}
 h3.seo {margin-top: 35px;}
@@ -213,8 +213,6 @@ h3.seo {margin-top: 35px;}
 .icone .gauche .cercle-bleu .petit-rond {width: 15px; height: 15px; right: -8px;}
 
 }
-
-
 
 
 
@@ -380,7 +378,7 @@ button {padding: 0.5em; margin: 0 auto; background-color: #6699FF; color:  #ffff
     @media screen and (max-width: 375px) {
 .agency { height: 6300px; }
 .marge {width: 90%; /*height: 750px;*/ margin: 0; /*position: relative;*/ display: block;}
-/*.marge*/ .phonexform {  width: 80%; height: 600px;  font-weight: bold;  text-align: left; display: block;
+/*.marge*/ .phonexform {  width: 80%; height: 70%;  font-weight: bold;  text-align: left; display: block;
   font-family: "Arial, Helvetica, sans-serif"; margin: 0; border: 3px; margin-left: 50px; 
     background: rgb(223, 223, 233); margin-top: 60px; /*position: absolute;*/ }
 .phonexform .texcont { font-size: 20px; margin-left: 10px;}
@@ -391,6 +389,7 @@ button {padding: 0.5em; margin: 0 auto; background-color: #6699FF; color:  #ffff
                          overflow: hidden; font-size: 15px; margin-left: 10px;}
 .phonexform>table>tbody>tr>td>button {padding: 0.5em; margin-left: 10px; background-color: #6699FF;
          color:  #ffffff; font-size: 15px; margin-left: 50px;}
+.footer {display: none;}
 }
 
 .cestlafin {height: 150px;}
