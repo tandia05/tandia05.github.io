@@ -24,7 +24,7 @@ font-style: normal;
 * {margin: 0;padding: 0;}
 body { /*margin: 0; padding: 0; margin-top: 0;*/ /*max-width: 1680px;*/ margin: auto;}
 h1 , h2 , h3 , h4 {font-family: 'Roboto'; font-weight: bold; }
-h5 , h6 ,p {font-family: 'Roboto'; font-weight: normal;}
+h5 , h6 ,p , a {font-family: 'Roboto'; font-weight: normal;}
 
 .logo {/*margin-left: 100px;*/ width: 10%; margin-top: 3%; height: 40%; /*margin: auto;*/ }
 .agency {width: 90%; margin: 0 auto;  margin-top: 25px;  max-width: 1200px; /*height: 2300px;*/}
@@ -146,7 +146,7 @@ ul li a:active  {background-color: white; border-top-style: 2px ; border-top-col
 .point {background:rgb(92, 173, 211); border-radius:50%; width:18px; height:18px;
              border:4px solid #FFFFFF; margin: auto; margin-top: -4px;} 
 .barre {width:150px; border:0.5px solid #b3cccc; margin: auto;position: relative; margin-top: -9px; opacity: 0.1; }
-.service {display: flex; width: 80%;  margin: auto; margin-top: 25px;}
+.service {display: flex; width: 80%;  margin: auto; margin-top: 25px; padding-bottom: 50px;}
 .service2 h4 {margin-top: 15px;}
 .service0 {width: 100%; margin: auto;}
 .service1 {width:50%; margin: auto;}
@@ -239,13 +239,13 @@ h3.seo {margin-top: 35px;}
 .triangle  { border-style: solid; border-width: 8px 8px 0 8px;
               border-color: #007bff transparent transparent transparent;
                position: absolute; /*top: 42px;*/ right: 45%; opacity: 0; bottom: -8px;}
-#projet0 {display: flex;  height: 350px; margin: auto;}
+#projet0 {display: flex;  /*height: 350px; */margin: auto;}
 
 * {  box-sizing: border-box;}
 .contenu { background-color: #F2F4F4;  position: relative; margin: 0 auto; display: flex;
            justify-content: center; flex-wrap: wrap;  justify-content: space-between;
            justify-content: space-around; flex-direction: row;}
-.imgh {width: 20%; height: 150px; display: block; position: relative;
+.imgh {width: 20%; height: 150px; display: block; position: relative; margin-top: 5px; margin-bottom: 5px;
         margin-left: 5px; /*margin-right: 5px; *//*margin: auto;*/ overflow: hidden;}
 img {width: 100%; height: 100%;  position: relative; margin: auto; }
 
@@ -262,7 +262,7 @@ img {width: 100%; height: 100%;  position: relative; margin: auto; }
                                   width: 100%;
                                   background: rgb(0, 0, 0); 
                                   background: rgba(0, 0, 0, 0.5); 
-                                  color: #f1f1f1; width: 100%; height: 50%; padding: 20px; overflow: hidden;}
+                                  color: #f1f1f1; width: 100%; height: 50%; padding: 20px; /*overflow: hidden;*/}
 /*******ipad Pro******/
 @media screen and (max-width: 1024px) {
   .tiproj {font-size: 30px; }
@@ -271,9 +271,9 @@ img {width: 100%; height: 100%;  position: relative; margin: auto; }
 #projet { width: 100%; overflow: hidden;  margin: 0 auto;}
 
 .navsmenu a  {  font-size: 20px;}
-#projet0 {display: flex; flex-wrap: wrap;  height: 100%; margin: auto;}
-.contenu { height: 600px;}
-.imgh {width: 30%; height: 150px;  margin-left: 2px; position: relative;  overflow: hidden;}
+#projet0 {display: flex; flex-wrap: wrap;  /*height: 100%;*/ margin: auto;}
+.contenu { /*height: 600px;*/}
+.imgh {width: 30%; height: 150px;  margin-left: 2px; position: relative;  overflow: hidden; margin-top: 3%;}
 img {width: 100%; height: 100%; position: relative; margin: auto; }
  .agency { height: 3800px;}
  .cercle-blanc .fa-eye { margin-left:190px; }
@@ -282,12 +282,12 @@ img {width: 100%; height: 100%; position: relative; margin: auto; }
 @media screen and (max-width: 768px) {
 .tiproj {font-size: 30px; }
 .texproj > h5 {font-size: 25px;}
-#projet { width: 100%; height: 900px; overflow: hidden;  margin: 0 auto;}
+#projet { width: 100%; /*height: 900px;*/ overflow: hidden;  margin: 0 auto;}
 .navsmenu .ulsmenu { list-style-type: none;  display: flex;  }
 .navsmenu a  {  font-size: 20px;}
-#projet0 {display: flex; flex-wrap: wrap;  height: 350px; margin: auto;}
-.contenu { height: 550px;}
-.imgh {width: 30%; height: 150px; margin-left: 2px; position: relative;  overflow: hidden;}
+#projet0 {display: flex; flex-wrap: wrap;  /*height: 350px;*/ margin: auto;}
+.contenu { /*height: 550px;*/}
+.imgh {width: 30%; height: 150px; margin-left: 2px; position: relative;  overflow: hidden; }
 img {width: 100%; height: 100%;  position: relative; margin: auto; }
 .agency { height: 3200px;}
 .cercle-blanc .fa-eye { margin-left:150px; }
@@ -297,12 +297,12 @@ img {width: 100%; height: 100%;  position: relative; margin: auto; }
 @media screen and (max-width: 375px) { 
 .tiproj {font-size: 20px; }
 .texproj > h5 {font-size: 19px;}
-#projet { width: 100%; height: 2700px; overflow: hidden;  margin: 0 auto;}
+#projet { width: 100%; /*height: 2700px;*/ overflow: hidden;  margin: 0 auto;}
 .navsmenu .ulsmenu { list-style-type: none;  display: flex; width: 100%; padding: 10px; justify-content: center;}
 .navsmenu li { font-size: 35px;   }
 .navsmenu a  {  font-size: 10px; padding: 10px;}
-#projet0 {display: flex; flex-wrap: wrap;  height: 2750px; margin: auto;}
-.contenu { height: 2400px; width: 800px;}
+#projet0 {display: flex; flex-wrap: wrap; /* height: 2750px;*/ margin: auto;}
+.contenu { /*height: 2400px;*/ width: 800px;}
 .imgh {width: 90%; height: 10%; position: relative; margin-top: 9px;  overflow: hidden;}
 img {width: 100%; height: 100%;  position: relative; margin: auto; }
 .imgh .hov>h4 {font-size: 20px;}
@@ -315,12 +315,12 @@ img {width: 100%; height: 100%;  position: relative; margin: auto; }
 @media screen and (max-width: 360px) { 
 .tiproj {font-size: 20px; }
 .texproj > h5 {font-size: 19px;}
-#projet { width: 100%; height: 2700px; overflow: hidden;  margin: 0 auto;}
+#projet { width: 100%; /*height: 2700px;*/ overflow: hidden;  margin: 0 auto;}
 .navsmenu .ulsmenu { list-style-type: none;  display: flex; width: 100%; padding: 10px; justify-content: center;}
 .navsmenu li { font-size: 35px;   }
 .navsmenu a  {  font-size: 10px; padding: 10px;}
-#projet0 {display: flex; flex-wrap: wrap;  height: 2750px; margin: auto;}
-.contenu { height: 2400px; width: 800px;}
+#projet0 {display: flex; flex-wrap: wrap;  /*height: 2750px;*/ margin: auto;}
+.contenu { height: 2400px; width: /*800px;*/}
 .imgh {width: 90%; height: 10%; position: relative; margin-top: 9px;  overflow: hidden;}
 img {width: 100%; height: 100%;  position: relative; margin: auto; }
 .imgh .hov>h4 {font-size: 20px;}
@@ -375,7 +375,7 @@ button {padding: 0.5em; margin: 0 auto;font-size: 15px; margin-left: 20px}
 
 
 #contact { display: flex; width: 100%; overflow: hidden; /*height: 550px;*/
-   margin: 0 auto; margin-top: 150px;  position: relative; text-align: center;  font-size:13px; }
+   margin: 0 auto; margin-top: 150px;  position: relative; text-align: center;  font-size:13px; margin-top: 15%;}
 
 .calque { width: 100%; height: 550px; overflow: hidden;  border: 3px solid #F2F2F2; margin: 0 ; }
 
@@ -398,7 +398,7 @@ button {padding: 0.5em; margin: 0 auto; background-color: #6699FF; color:  #ffff
 /*.marge {width: 100%; height: 750px; margin: 0; position: relative; display: block;}*/
 /*.marge*/ .phonexform {  width: 100%; height: 25%;  font-weight: bold;  text-align: left; display: block;
   font-family: "Arial, Helvetica, sans-serif"; margin: 0 auto; border: 3px; /*margin-left: 50px;*/ 
-    background: rgb(223, 223, 233); margin-top: 1%; position: relative; margin-left: 50px; }
+    background: rgb(223, 223, 233); margin-top: 1%; position: relative; margin-left: 50px; margin-top: -20%; }
 .phonexform .texcont { font-size: 20px; margin-left: 10px;}
 
 .phonexform>table>tbody>tr>td>input { width: 85%; height: 50px; padding: 1.5em; margin: 0.5em; overflow: hidden;
